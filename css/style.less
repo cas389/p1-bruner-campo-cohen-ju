@@ -24,6 +24,28 @@ header {
 			.karla-bold();
 			text-transform: uppercase;
 			color: @bb-green;
+			padding: 0;
+		}
+		.nav-link:hover {
+			color: @bb-pink;
+		}
+		.hover-border {
+			position: relative;
+		}
+		.hover-border::after {
+			content: '';
+			width: 0%;
+			height: 0.3rem;
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			border-radius: 1.5rem;
+			transition: all 500ms ease-in-out;
+			background: @bb-purple;
+		}
+		.hover-border:hover::after {
+			left: 0%;
+			width: 100%;
 		}
 		.custom-toggler {
 			border-color: @bb-purple;
