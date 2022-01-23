@@ -13,7 +13,17 @@ body {
 	.karla();
 	color: @bb-drk-purple;
 }
-
+h1 {
+	.sacramento();
+	color: @bb-pink;
+	.small-heading {
+		.karla-bold();
+		font-size: 1rem;
+	}
+	.small-heading a {
+		color: @bb-purple;
+	}
+}
 // HEADER
 header {
 	.navbar {
@@ -62,14 +72,16 @@ main {
 		.img-carousel {
 			max-height: 500px;
 		}
-		.carousel-item {
-			// background-position: center;
-		}
+	}
+	.bouquet-sec {
+		padding-top: 2rem;
 	}
 }
+
 // FOOTER
 footer {
 	text-align: center;
+	margin-top: 3rem;
 	padding: 3rem;
 	.logo {
 		max-width: 100px;
