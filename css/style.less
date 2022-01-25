@@ -1,0 +1,93 @@
+@import url('./variables.less');
+@import url('./mixins.less');
+
+// GLOBAL
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	.karla();
+	color: @bb-drk-purple;
+}
+h1 {
+	.sacramento();
+	color: @bb-pink;
+	.small-heading {
+		.karla-bold();
+		font-size: 1rem;
+	}
+	.small-heading a {
+		color: @bb-purple;
+	}
+}
+// HEADER
+header {
+	.navbar {
+		.logo {
+			max-width: 150px;
+		}
+		.nav-link {
+			.karla-bold();
+			text-transform: uppercase;
+			color: @bb-green;
+			padding: 0;
+		}
+		.nav-link a {
+			text-decoration: none;
+			color: @bb-green;
+		}
+		.nav-link:hover {
+			color: @bb-pink;
+		}
+		.hover-border {
+			position: relative;
+		}
+		.hover-border::after {
+			content: '';
+			width: 0%;
+			height: 0.3rem;
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			border-radius: 1.5rem;
+			transition: all 500ms ease-in-out;
+			background: @bb-purple;
+		}
+		.hover-border:hover::after {
+			left: 0%;
+			width: 100%;
+		}
+		.custom-toggler {
+			border-color: @bb-purple;
+		}
+		.custom-toggler .navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(87, 39, 102)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+	}
+}
+
+// MAIN
+main {
+	section {
+		.img-carousel {
+			max-height: 500px;
+		}
+	}
+	.bouquet-sec {
+		padding-top: 2rem;
+	}
+}
+
+// FOOTER
+footer {
+	text-align: center;
+	margin-top: 3rem;
+	padding: 3rem;
+	.logo {
+		max-width: 100px;
+	}
+}

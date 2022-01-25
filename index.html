@@ -11,12 +11,228 @@
 			rel="stylesheet"
 		/>
 		<!-- LESS -->
-		<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+		<link rel="stylesheet/less" type="text/css" href="./css/style.less" />
 
 		<title>Blossom Boutique</title>
 	</head>
-	<body>
-		<a href="products.html">Products</a>
+
+	<body class="d-flex flex-column vh-100">
+		<header>
+			<nav class="navbar navbar-expand-md">
+				<div class="container">
+					<a class="navbar-brand" href="index.html"
+						><img
+							src="./imgs/logo.png"
+							class="image-fluid logo"
+							alt="logo"
+							title="Logo"
+					/></a>
+					<button
+						class="navbar-toggler custom-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggle"
+						aria-controls="navbarToggle"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarToggle"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link hover-border" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link hover-border" href="products.html">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link hover-border" href="services.html"
+									>Services</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link hover-border" href="about.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link hover-border" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- CAROUSEL -->
+			<section class="img-carousel">
+				<div id="car-inicator" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#car-inicator"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#car-inicator"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#car-inicator"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#car-inicator"
+							data-bs-slide-to="3"
+							aria-label="Slide 4"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="./imgs/wedding-table.jpg"
+								class="d-block w-100"
+								alt="wedding table"
+								title="Wedding Table"
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./imgs/bouquet1.jpg"
+								class="d-block w-100"
+								alt="bouquet"
+								title="Bouquet"
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./imgs/bridal-bouquet.jpg"
+								class="d-block w-100"
+								alt="bridal bouquet"
+								title="Bridal Bouquet"
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="./imgs/bouquet2.jpg"
+								class="d-block w-100"
+								alt="bouquet2"
+								title="Bouquet2"
+							/>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#car-inicator"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#car-inicator"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+
+			<section class="bouquet-sec">
+				<div class="container">
+					<h1>
+						Browse Our Bouquets
+						<span class="small-heading"
+							><a href="products.html">See All Bouquets</a></span
+						>
+					</h1>
+				</div>
+			</section>
+
+			<section class="services-sec">
+				<div class="container">
+					<h1>
+						Browse Our Services
+						<span class="small-heading"
+							><a href="services.html">See All Services</a></span
+						>
+					</h1>
+				</div>
+			</section>
+
+			<section class="reviews-sec">
+				<div class="container">
+					<h1>Read What Their Saying...</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error
+						deleniti natus nemo ducimus corrupti molestias beatae ab omnis,
+						inventore itaque aliquid quia soluta nesciunt facere illo numquam
+						doloribus ea!
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer
+			class="d-flex flex-wrap justify-content-center align-items-center py-1 my-4 mt-auto border-top"
+		>
+			<!-- <div class="container"> -->
+			<p
+				class="col-md-4 col-sm-12 justify-content-md-start justify-content-center mb-0 text-muted text-center order-3 order-md-1"
+			>
+				&copy; 2022 Blossom Boutique
+			</p>
+
+			<a
+				href="/"
+				class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center mb-1 mb-md-0 me-md-auto link-dark text-decoration-none order-1 order-md-2"
+			>
+				<img
+					src="./imgs/logo.png"
+					class="image-fluid logo"
+					alt="logo"
+					title="Logo"
+				/>
+			</a>
+
+			<ul
+				class="nav col-md-4 col-sm-12 justify-content-md-center justify-content-center order-2 order-md-3"
+			>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Shop</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link px-2 text-muted">Contact</a>
+				</li>
+			</ul>
+			<!-- </div> -->
+		</footer>
+
 		<!-- BOOTSTRAP JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- LESS -->
