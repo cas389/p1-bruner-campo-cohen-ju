@@ -1,5 +1,5 @@
-@import url('./variables.less');
-@import url('./mixins.less');
+@import url("./variables.less");
+@import url("./mixins.less");
 
 // GLOBAL
 html,
@@ -63,7 +63,7 @@ header {
 			position: relative;
 		}
 		.hover-border::after {
-			content: '';
+			content: "";
 			width: 0%;
 			height: 0.3rem;
 			position: absolute;
@@ -86,18 +86,42 @@ header {
 	}
 }
 
-// MAIN
+// MAIN SECTION
 main {
 	section {
+		//HOMEPAGE
 		.img-carousel {
 			max-height: 500px;
 		}
-	}
-	.bouquet-sec {
-		padding-top: 2rem;
+
+		.bouquet-sec,
+		.services-sec,
+		.reviews-sec {
+			margin: 2rem 0;
+		}
+		.reviews-sec {
+			.review1,
+			.review2,
+			.review3 {
+				text-align: center;
+				margin: 1rem 0;
+				padding: 0 1rem;
+			}
+
+			.review {
+				margin: 0;
+				padding: 0;
+			}
+
+			.reviewer {
+				margin: 0;
+				padding: 0;
+				text-align: right;
+				color: @bb-green;
+			}
+		}
 	}
 }
-
 
 // PRODUCTS PAGE
 .products-page {
@@ -110,7 +134,7 @@ main {
 		color: @bb-drk-purple;
 		text-transform: uppercase;
 		text-decoration: none;
-		.karla-bold
+		.karla-bold;
 	}
 	.card-link:hover {
 		color: @bb-green;
@@ -159,36 +183,36 @@ main {
 // Contact US Page
 
 .label_input_wrap {
-  display: block;
-  font-weight: bold;
+	display: block;
+	font-weight: bold;
 	color: @bb-purple;
 }
 
 .submit input {
-  background: @bb-pink;
-  font-weight: bold;
+	background: @bb-pink;
+	font-weight: bold;
 }
 
 .spacing {
-  margin-bottom: .4rem;
+	margin-bottom: 0.4rem;
 }
 
 .input {
-	padding: .4rem 1.2rem;
+	padding: 0.4rem 1.2rem;
 	text-align: left;
-	font-size: .8rem;
+	font-size: 0.8rem;
 }
 
 .textarea {
-  padding: .5rem .7rem;
-	font-size: .8rem
+	padding: 0.5rem 0.7rem;
+	font-size: 0.8rem;
 }
 
 .contact-info {
 	background: @bb-blue;
 	height: 99%;
-	padding-top: .1rem;
-	padding-left: .4rem;
+	padding-top: 0.1rem;
+	padding-left: 0.4rem;
 }
 
 .text {
@@ -198,18 +222,16 @@ main {
 	padding-top: 1rem;
 }
 .btn {
-  font-size: .8rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  background-color: @bb-pink;
-  color: #fff;
-	}
-  .btn:hover {
-    color: #fff;
-		background-color: @bb-purple;
-	}
-
-
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	background-color: @bb-pink;
+	color: #fff;
+}
+.btn:hover {
+	color: #fff;
+	background-color: @bb-purple;
+}
 
 // FOOTER
 footer {
@@ -228,9 +250,7 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 ===========================*/
 
 @media screen and (min-width: 1000px) {
-
 }
-
 
 /*===========================
 
