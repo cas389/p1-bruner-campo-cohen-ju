@@ -9,21 +9,33 @@ body {
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
 	.karla();
 	color: @bb-drk-purple;
 }
+
 h1 {
 	.sacramento();
 	color: @bb-pink;
+	font-size: 2.5rem;
+
 	.small-heading {
 		.karla-bold();
-		font-size: 1rem;
+		font-size: 0.75rem;
 	}
+
 	.small-heading a {
 		color: @bb-purple;
 	}
+	.small-heading a:hover {
+		color: @bb-green;
+	}
 }
+
 .h1-white {
 	color: white;
 }
@@ -36,7 +48,7 @@ h1 {
 h2 {
 	.sacramento();
 	color: @bb-purple;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	margin-top: 1rem;
 }
 
@@ -46,22 +58,27 @@ header {
 		.logo {
 			max-width: 150px;
 		}
+
 		.nav-link {
 			.karla-bold();
 			text-transform: uppercase;
 			color: @bb-green;
 			padding: 0;
 		}
+
 		.nav-link a {
 			text-decoration: none;
 			color: @bb-green;
 		}
+
 		.nav-link:hover {
 			color: @bb-pink;
 		}
+
 		.hover-border {
 			position: relative;
 		}
+
 		.hover-border::after {
 			content: "";
 			width: 0%;
@@ -73,13 +90,16 @@ header {
 			transition: all 500ms ease-in-out;
 			background: @bb-purple;
 		}
+
 		.hover-border:hover::after {
 			left: 0%;
 			width: 100%;
 		}
+
 		.custom-toggler {
 			border-color: @bb-purple;
 		}
+
 		.custom-toggler .navbar-toggler-icon {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(87, 39, 102)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 		}
@@ -99,6 +119,7 @@ main {
 		.reviews-sec {
 			margin: 2rem 0;
 		}
+
 		.reviews-sec {
 			.review1,
 			.review2,
@@ -120,6 +141,11 @@ main {
 				color: @bb-green;
 			}
 		}
+
+		// PRODUCTS
+		// ABOUT
+		// CONTACT
+		// SERVICES
 	}
 }
 
@@ -127,25 +153,31 @@ main {
 .products-page {
 	margin: 0 auto;
 	width: 80%;
+
 	.product-container {
 		margin: 1rem 0;
 	}
+
 	.card-link {
 		color: @bb-drk-purple;
 		text-transform: uppercase;
 		text-decoration: none;
 		.karla-bold;
 	}
+
 	.card-link:hover {
 		color: @bb-green;
 	}
+
 	.list-group,
 	.card-body {
 		text-align: center;
 	}
+
 	.shop-now-bg {
 		background-color: @bb-blue;
 	}
+
 	.products-video {
 		width: 100%;
 		height: 400px;
@@ -157,14 +189,17 @@ main {
 .about-us-page {
 	width: 80%;
 	margin: 2rem auto;
+
 	.center {
 		text-align: center;
 		padding: 2rem;
 	}
+
 	.avatars {
 		border-radius: 50%;
 		width: 50%;
 	}
+
 	.justify {
 		text-align: justify;
 	}
@@ -173,6 +208,7 @@ main {
 // SERVICES PAGE
 .services-page {
 	padding: 2rem;
+
 	.background-green {
 		background-color: @bb-green;
 		padding: 1rem;
@@ -221,6 +257,7 @@ main {
 	padding-left: 1.2rem;
 	padding-top: 1rem;
 }
+
 .btn {
 	font-size: 0.8rem;
 	letter-spacing: 0.1rem;
@@ -228,6 +265,7 @@ main {
 	background-color: @bb-pink;
 	color: #fff;
 }
+
 .btn:hover {
 	color: #fff;
 	background-color: @bb-purple;
@@ -238,6 +276,7 @@ footer {
 	text-align: center;
 	// margin-top: 3rem;
 	padding: 1rem 0 2rem 0;
+
 	.logo {
 		max-width: 100px;
 	}
