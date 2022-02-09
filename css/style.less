@@ -22,6 +22,7 @@ h1 {
 	.sacramento();
 	color: @bb-pink;
 	font-size: 2.5rem;
+	text-align: center;
 
 	.small-heading {
 		.karla-bold();
@@ -117,11 +118,12 @@ main {
 		.bouquet-sec,
 		.services-sec,
 		.reviews-sec {
-			margin: 2rem 0;
+			margin: 5rem 0;
 		}
-		.bouquet-sec {
+		.bouquet-sec,
+		.services-sec {
 			.card-link {
-				color: @bb-drk-purple;
+				color: @bb-purple;
 				text-transform: uppercase;
 				text-decoration: none;
 				.karla-bold;
@@ -143,6 +145,18 @@ main {
 			}
 			.shop-now-bg {
 				background-color: @bb-blue;
+			}
+		}
+		.services-sec {
+			.service-link a {
+				text-decoration: none;
+			}
+			.service-link .card {
+				transition: 0.4s ease-in-out;
+			}
+			.service-link .card:hover {
+				transition: 0.4s ease-in-out;
+				border: 3px solid @bb-pink;
 			}
 		}
 		.reviews-sec {
