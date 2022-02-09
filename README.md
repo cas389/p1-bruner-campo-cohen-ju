@@ -18,4 +18,8 @@ No issues to report.
 
 ## Resources
 
-No outside resources used.
+[Bootstrap 5](https://getbootstrap.com/)
+
+[Fontawesome](https://fontawesome.com)
+
+[Bootstrap carousel with cards in 3 columns](https://gosnippets.com/snippets/bootstrap-carousel-with-cards-in-3-columns)
