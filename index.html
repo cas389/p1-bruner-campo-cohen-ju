@@ -28,6 +28,15 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		/>
+		<!-- OWL CAROUSEL -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+		/>
 		<!-- LESS -->
 		<link rel="stylesheet/less" type="text/css" href="./css/style.less" />
 
@@ -187,275 +196,224 @@
 
 						<!-- BOUQUET CAROUSEL -->
 						<div class="row">
-							<div class="col-12 text-center">
-								<a
-									class="btn btn-primary mb-3 mx-2"
-									href="#bouquet-indicator"
-									role="button"
-									data-bs-slide="prev"
-								>
-									<i class="fa fa-arrow-left"></i>
-								</a>
-								<a
-									class="btn btn-primary mb-3 mx-2"
-									href="#bouquet-indicator"
-									role="button"
-									data-bs-slide="next"
-								>
-									<i class="fa fa-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-
-						<!-- CAROUSEL CARDS -->
-						<div class="col-12">
 							<div
-								id="bouquet-indicator"
-								class="carousel slide"
-								data-bs-ride="carousel"
-								data-bs-interval="5000"
+								class="col-9 col-md-11 bouquet-carousel justify-content-center mx-auto"
 							>
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<div class="row">
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top">
-														<img
-															class="img-fluid"
-															alt="Blue Bouquet"
-															src="./imgs/blue-bouquet.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Blue Bouquet</h2>
-
-														<p class="card-text">
-															Carry your "something blue" with this showstopper
-															of a bouquet!
-														</p>
-														<ul class="list-group list-group-flush price">
-															<li class="list-group-item">$59.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+								<div class="owl-carousel owl-theme">
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top">
+												<img
+													class="img-fluid"
+													alt="Blue Bouquet"
+													src="./imgs/blue-bouquet.jpg"
+												/>
 											</div>
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top">
-														<img
-															class="img-fluid"
-															alt="corsages"
-															src="./imgs/corsages.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Corsages</h2>
+											<div class="card-body">
+												<h2 class="card-title">Blue Bouquet</h2>
 
-														<p class="card-text text-center">
-															Complete your prom look with our colorful
-															corsages!
-														</p>
-														<ul class="list-group list-group-flush">
-															<li class="list-group-item">$19.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+												<p class="card-text">
+													Carry your "something blue" with this showstopper of a
+													bouquet!
+												</p>
+												<ul class="list-group list-group-flush price">
+													<li class="list-group-item">$59.99</li>
+												</ul>
 											</div>
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top">
-														<img
-															class="img-fluid"
-															alt="flower in hair"
-															src="./imgs/hair-flower.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Flower Accessories</h2>
-
-														<p class="card-text text-center">
-															Add a touch of greenier to any hairstyle for prom
-															or wedding!
-														</p>
-														<ul class="list-group list-group-flush">
-															<li class="list-group-item">$19.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
 											</div>
 										</div>
 									</div>
-									<!--END ROW ONE-->
-									<div class="carousel-item">
-										<div class="row">
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top img-fluid">
-														<img
-															class="img-fluid"
-															alt="boutonniere"
-															src="./imgs/boutonniere.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Boutonniere</h2>
 
-														<p class="card-text">
-															Our red boutonnieres complete any ensemble for the
-															perfect date!
-														</p>
-														<ul class="list-group list-group-flush price">
-															<li class="list-group-item">$19.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top">
+												<img
+													class="img-fluid"
+													alt="corsages"
+													src="./imgs/corsages.jpg"
+												/>
 											</div>
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top img-fluid">
-														<img
-															class="img-fluid"
-															alt="pink bouquet"
-															src="./imgs/pink-bouquet.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Pink Flowers</h2>
+											<div class="card-body">
+												<h2 class="card-title">Corsages</h2>
 
-														<p class="card-text text-center">
-															This lovely pink flower bouquet is a perfect
-															addition for your prom date!
-														</p>
-														<ul class="list-group list-group-flush">
-															<li class="list-group-item">$29.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+												<p class="card-text text-center">
+													Complete your prom look with our colorful corsages!
+												</p>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">$19.99</li>
+												</ul>
 											</div>
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top img-fluid">
-														<img
-															class="img-fluid"
-															alt="red bouquet"
-															src="./imgs/red-bouquet.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Red Bouquet</h2>
-
-														<p class="card-text text-center">
-															This gorgeous red bouquet is perfect for any
-															bride.
-														</p>
-														<ul class="list-group list-group-flush">
-															<li class="list-group-item">$59.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
 											</div>
 										</div>
 									</div>
-									<!--END ROW TWO-->
-									<div class="carousel-item">
-										<div class="row">
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top img-fluid">
-														<img
-															class="img-fluid"
-															alt="Purple bouquet"
-															src="./imgs/purple-bouquet.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Purple Bouquet</h2>
 
-														<p class="card-text">
-															This lovely purple flower bouquet is a perfect
-															addition for your big day!
-														</p>
-														<ul class="list-group list-group-flush price">
-															<li class="list-group-item">$59.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top">
+												<img
+													class="img-fluid"
+													alt="flower in hair"
+													src="./imgs/hair-flower.jpg"
+												/>
 											</div>
-											<div class="col-md-4 mb-3">
-												<div class="card">
-													<div class="card-img-top img-fluid">
-														<img
-															class="img-fluid"
-															alt="pink bouquet"
-															src="./imgs/pink-white-bouquet.jpg"
-														/>
-													</div>
-													<div class="card-body">
-														<h2 class="card-title">Pink Bouquet</h2>
+											<div class="card-body">
+												<h2 class="card-title">Flower Accessories</h2>
 
-														<p class="card-text text-center">
-															Feel like a bride with our pink and white flower
-															bouquet!
-														</p>
-														<ul class="list-group list-group-flush">
-															<li class="list-group-item">$59.99</li>
-														</ul>
-													</div>
-													<div class="card-footer shop-now-bg">
-														<a href="products.html" class="card-link"
-															>Shop Now</a
-														>
-													</div>
-												</div>
+												<p class="card-text text-center">
+													Add a touch of greenier to any hairstyle for prom or
+													wedding!
+												</p>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">$19.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
 											</div>
 										</div>
 									</div>
-									<!--END ROW THREE-->
+
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top img-fluid">
+												<img
+													class="img-fluid"
+													alt="boutonniere"
+													src="./imgs/boutonniere.jpg"
+												/>
+											</div>
+											<div class="card-body">
+												<h2 class="card-title">Boutonniere</h2>
+
+												<p class="card-text">
+													Our red boutonnieres complete any ensemble for the
+													perfect date!
+												</p>
+												<ul class="list-group list-group-flush price">
+													<li class="list-group-item">$19.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top img-fluid">
+												<img
+													class="img-fluid"
+													alt="pink bouquet"
+													src="./imgs/pink-bouquet.jpg"
+												/>
+											</div>
+											<div class="card-body">
+												<h2 class="card-title">Pink Flowers</h2>
+
+												<p class="card-text text-center">
+													This lovely pink flower bouquet is a perfect addition
+													for your prom date!
+												</p>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">$29.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top img-fluid">
+												<img
+													class="img-fluid"
+													alt="red bouquet"
+													src="./imgs/red-bouquet.jpg"
+												/>
+											</div>
+											<div class="card-body">
+												<h2 class="card-title">Red Bouquet</h2>
+
+												<p class="card-text text-center">
+													This gorgeous red bouquet is perfect for any bride.
+												</p>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">$59.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top img-fluid">
+												<img
+													class="img-fluid"
+													alt="Purple bouquet"
+													src="./imgs/purple-bouquet.jpg"
+												/>
+											</div>
+											<div class="card-body">
+												<h2 class="card-title">Purple Bouquet</h2>
+
+												<p class="card-text">
+													This lovely purple flower bouquet is a perfect
+													addition for your big day!
+												</p>
+												<ul class="list-group list-group-flush price">
+													<li class="list-group-item">$59.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-item">
+										<div class="card">
+											<div class="card-img-top img-fluid">
+												<img
+													class="img-fluid"
+													alt="pink bouquet"
+													src="./imgs/pink-white-bouquet.jpg"
+												/>
+											</div>
+											<div class="card-body">
+												<h2 class="card-title">Pink Bouquet</h2>
+
+												<p class="card-text text-center">
+													Feel like a bride with our pink and white flower
+													bouquet!
+												</p>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">$59.99</li>
+												</ul>
+											</div>
+											<div class="card-footer shop-now-bg">
+												<a href="products.html" class="card-link">Shop Now</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<!--END ROW-->
 					</div>
 				</div>
 			</section>
 
 			<section>
-				<div class="container-md">
+				<div class="container-md mx-auto justify-content-center">
 					<div class="services-sec">
 						<h1>
 							Browse Our Services
@@ -465,7 +423,7 @@
 						</h1>
 
 						<div class="row">
-							<div class="col-md-4 service-link mb-3">
+							<div class="col-10 col-md-4 service-link mb-3 mx-auto">
 								<a href="services.html">
 									<div class="card">
 										<div class="card-img-top img-fluid">
@@ -481,7 +439,7 @@
 									</div>
 								</a>
 							</div>
-							<div class="col-md-4 service-link mb-3">
+							<div class="col-10 col-md-4 service-link mb-3 mx-auto">
 								<a href="services.html">
 									<div class="card">
 										<div class="card-img-top img-fluid">
@@ -497,7 +455,7 @@
 									</div>
 								</a>
 							</div>
-							<div class="col-md-4 service-link mb-3">
+							<div class="col-10 col-md-4 service-link mb-3 mx-auto">
 								<a href="services.html">
 									<div class="card">
 										<div class="card-img-top img-fluid">
@@ -605,9 +563,45 @@
 			</ul>
 		</footer>
 
+		<!-- JQUERY -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<!-- BOOTSTRAP JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- OWL CAROUSEL -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<!-- LESS -->
 		<script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+		<script>
+			$(document).ready(function () {
+				$(".owl-carousel").owlCarousel({
+					loop: true,
+					margin: 10,
+					nav: true,
+					autoplay: true,
+					autoplayTimeout: 4000,
+					autoplayHoverPause: true,
+					center: true,
+					navText: [
+						"<i class='fa fa-circle-chevron-left nav-button'></i>",
+						"<i class='fa fa-circle-chevron-right nav-button'></i>",
+					],
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1,
+							// nav: true,
+						},
+						800: {
+							items: 3,
+							// nav: true,
+						},
+						1000: {
+							items: 5,
+							// nav: true,
+						},
+					},
+				});
+			});
+		</script>
 	</body>
 </html>

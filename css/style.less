@@ -111,7 +111,7 @@ header {
 // MAIN SECTION
 main {
 	section {
-		//HOMEPAGE
+		// HOMEPAGE
 		.img-carousel {
 			max-height: 500px;
 		}
@@ -153,6 +153,57 @@ main {
 			}
 		}
 
+		// BOUQUET CAROUSEL
+		.bouquet-carousel {
+			position: relative;
+
+			.owl-carousel {
+				.owl-nav {
+					overflow: hidden;
+				}
+
+				.nav-button {
+					cursor: pointer;
+				}
+
+				.owl-prev,
+				.owl-next {
+					color: @bb-pink;
+					font-size: 1.5rem;
+					position: absolute;
+					top: 210px !important;
+				}
+				.owl-prev:hover,
+				.owl-next:hover {
+					color: @bb-blue;
+					background: transparent;
+				}
+
+				.owl-prev {
+					left: -2.25rem;
+				}
+
+				.owl-next {
+					right: -2.25rem;
+				}
+			}
+
+			.owl-theme {
+				.owl-dots {
+					margin-top: 0.5rem;
+
+					.owl-dot.active span {
+						background: @bb-green;
+					}
+
+					.owl-dot:hover span {
+						background: @bb-blue;
+					}
+				}
+			}
+		}
+
+		// SERVICES SECTION
 		.services-sec {
 			.service-link a {
 				text-decoration: none;
@@ -168,6 +219,7 @@ main {
 			}
 		}
 
+		// REVIEW SECTION
 		.reviews-sec {
 			.review1,
 			.review2,
