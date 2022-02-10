@@ -27,6 +27,7 @@ h1 {
 	.small-heading {
 		.karla-bold();
 		font-size: 0.75rem;
+		white-space: pre;
 	}
 
 	.small-heading a {
@@ -52,6 +53,7 @@ h2 {
 	color: @bb-purple;
 	font-size: 2rem;
 	margin-top: 1rem;
+	overflow-wrap: normal;
 }
 
 // HEADER
@@ -173,6 +175,7 @@ main {
 					position: absolute;
 					top: 210px !important;
 				}
+
 				.owl-prev:hover,
 				.owl-next:hover {
 					color: @bb-blue;
@@ -242,11 +245,6 @@ main {
 				color: @bb-green;
 			}
 		}
-
-		// PRODUCTS
-		// ABOUT
-		// CONTACT
-		// SERVICES
 	}
 }
 
@@ -318,7 +316,6 @@ main {
 }
 
 // Contact US Page
-
 .label_input_wrap {
 	display: block;
 	font-weight: bold;
@@ -375,7 +372,6 @@ main {
 // FOOTER
 footer {
 	text-align: center;
-	// margin-top: 3rem;
 	padding: 1rem 0 2rem 0;
 
 	.logo {
@@ -383,20 +379,25 @@ footer {
 	}
 }
 
-/*===========================
-
-Responsive Web Coding - 1366px by 768px (Laptop)
-
-===========================*/
-
-@media screen and (min-width: 1000px) {
+// MEDIA QUERIES
+@media screen and (max-width: 568px) {
+	h2 {
+		font-size: 2rem;
+	}
 }
 
-/*===========================
+@media screen and (min-width: 601px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+}
 
-Responsive Web Coding - 1366px by 768px (Laptop)
+@media screen and (min-width: 968px) {
+	h2 {
+		font-size: 2rem;
+	}
+}
 
-===========================*/
 @media screen and (min-width: 1366px) {
 	/* Product Page */
 	.product-container {
