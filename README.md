@@ -23,3 +23,7 @@ No issues to report.
 [Fontawesome](https://fontawesome.com)
 
 [Bootstrap carousel with cards in 3 columns](https://gosnippets.com/snippets/bootstrap-carousel-with-cards-in-3-columns)
+
+[Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
+
+[Create Custom Navigation Next and Previous Arrows](https://www.positronx.io/owl-carousel-2-create-custom-navigation-next-and-previous-arrows/)
