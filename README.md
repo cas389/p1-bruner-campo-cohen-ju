@@ -18,12 +18,12 @@ No issues to report.
 
 ## Resources
 
-[Bootstrap 5](https://getbootstrap.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
 
-[Fontawesome](https://fontawesome.com)
+- [Fontawesome](https://fontawesome.com)
 
-[Bootstrap carousel with cards in 3 columns](https://gosnippets.com/snippets/bootstrap-carousel-with-cards-in-3-columns)
+- [Bootstrap carousel with cards in 3 columns](https://gosnippets.com/snippets/bootstrap-carousel-with-cards-in-3-columns)
 
-[Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
+- [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 
-[Owl Carousel With Bootstrap 5](https://www.youtube.com/watch?v=TlMJZcRAq6M)
+- [Owl Carousel With Bootstrap 5](https://www.youtube.com/watch?v=TlMJZcRAq6M)
